@@ -1,50 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muk-Bang</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+    <title>Página HTML Esencial</title>
+
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th scope="col" colspan="4">¿Qué es?</th>
-                
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td rowspan="2">
-                    El mukbang es un fenómeno de internet originario de Corea del Sur 
-                    donde una persona graba y transmite en vivo mientras come grandes cantidades de comida.
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">Creadores</th>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th scope="row">Audiencia</th>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <th scope="row">Futuro</th>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="4">El término mukbang (o meokbang) es una combinación de las palabras coreanas para "comer" (먹는, meokneun) y "transmisión" (방송, bangsong).</td>
-            </tr>
-        </tfoot>
-    </table>
+
+    <h1>Mi Web</h1>
+    
+    <p>
+        Vamos a hacer esta cosa, basicamente vamos a ver para que sirven las etiquetas princpiales en html.
+    </p>
+
+    <p>
+        Empezando por la etiqueta <code>&lt;!DOCTYPE html></code> que define el tipo de documento y la versión de HTML.
+    </p>
+
+    <p>
+        Esta tambien la etiqueta de <code>&lt;html></code> que basicamente es el contenedor de toda nuestra página web.
+    </p>
+
+    <p>
+        Finalmente estan las etiquetas de cabecera, definidas como <code>&lt;head></code>, que contiene elementos como el titulo de nuestra página.
+    </p>
+
+    <h2>Encabezados</h2>
+
+    <p>
+        Los encabezados en HTML van desde <code>&lt;h1&gt;</code> (más importante) hasta <code>&lt;h6&gt;</code> (menos importante).
+    </p>
+
+    <h3>Ejemplo de encabezados:</h3>
+
+    <h1>&lt;h1&gt; Encabezado 1 &lt;/h1&gt;</h1>
+    <h2>&lt;h2&gt; Encabezado 2 &lt;/h2&gt;</h2>
+    <h3>&lt;h3&gt; Encabezado 3 &lt;/h3&gt;</h3>
+    <h4>&lt;h4&gt; Encabezado 4 &lt;/h4&gt;</h4>
+    <h5>&lt;h5&gt; Encabezado 5 &lt;/h5&gt;</h5>
+    <h6>&lt;h6&gt; Encabezado 6 &lt;/h6&gt;</h6>
+ 
+    <h2>Listas</h2>
+
+    <p>Para agrupar elementos similares, existen dos tipos de listas, las ordenadas y las desordenadas:</p>
+    
+    <ul>
+    
+        <li><code>&lt;ul&gt;</code>: Lista desordenada (viñetas)</li>
+        <li><code>&lt;ol&gt;</code>: Lista ordenada (enumerada)</li>
+    
+    </ul>
+
+    <h3>Ejemplo de lista desordenada</h3>
+    
+    <ul>
+    
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    
+    </ul>
+    
+    <h3>Ejemplo de lista ordenada</h3>
+    
+    <ol>
+    
+        <li>Investigar etiquetas 😈</li>
+        <li>Escribir el código 🧠🧠🧠</li>
+        <li>Probar la página :D</li>
+    
+    </ol>
+
+    <h2>Imágenes</h2>
+    <p>Para mostrar imágenes usa la etiqueta <code>&lt;img&gt;</code> y sus atributos <b>src</b> (ruta de la imagen) y <b>alt</b> (descripción) en caso de que la imagen fallé al cargarse:</p>
+    <img src="https://preview.redd.it/84vh9jr2enu91.jpg?auto=webp&s=b1522398ef3c40fa9c8c6a8352c5c8fa1c997f24" alt="Chicharrón">
+
+    
+    <h2>Enlaces</h2>
+    <p>Para vincular a otras páginas usa la etiqueta <code>&lt;a&gt;</code> con el atributo <b>href</b>:</p>
+    <a href="https://www.utez.edu.mx:8443/SISAVA/" target="_blank">Ingresa al SISA :D</a>
+
+    
+    <h2>Atributos Principales</h2>
+    
+    <ul>
+
+        <li><b>src</b>: Fuente /(ruta de una imagen o web). Ejemplo: <code>&lt;img src="foto.jpg"&gt;</code> <code>&lt;img src="https://mi.imagen.com"&gt;</code></li>
+        <li><b>alt</b>: Texto alternativo de una imagen. Ejemplo: <code>&lt;img alt="Descripción"&gt;</code></li>
+        <li><b>href</b>: Destino de un enlace. Ejemplo: <code>&lt;a href="https://www.utez.edu.mx:8443/SISAVA/"&gt;</code></li>
+        <li><b>title</b>: Título emergente al pasar el mouse. Ejemplo: <code>&lt;a title="Más info"&gt;Enlace&lt;/a&gt;</code></li>
+        <li><b>class</b> y <b>id</b>: Para identificar o aplicar estilos CSS.</li>
+        <li><b>style</b>: Permite aplicar estilos CSS directamente a un elemento.</li>
+
+    </ul>
+ 
 </body>
 </html>
