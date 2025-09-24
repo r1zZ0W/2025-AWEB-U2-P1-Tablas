@@ -13,6 +13,7 @@ table {
   font-family: 'Quicksand', sans-serif;
   height: 700px;
   width: 100%;
+  table-layout: fixed;
 }
 
 th {
@@ -33,6 +34,12 @@ li{
 img {
   width: 100%;
   height: auto;
+}
+
+tfoot img {
+  height: 250px; /* O la altura que prefieras */
+  width: 100%;
+  object-fit: cover;
 }
 
 
