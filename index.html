@@ -1,106 +1,110 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Muk-Bang</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <!-- Colspan sirve para poder expandir las columna que cubre el encabezado 
+                     o lo datos de nuestra tabla-->
+                    <th scope="col" colspan="4">
+                        <h1>Muk-Bang</h1>
+                    </th>                
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <!-- Al igual que se pueden "insertar" parrafos e imagenes dentro de el mismo
+                        encabezado o datos, y en si cualquier elemento de html, por lo que he visto XD -->
+                    <th scope="row" id = "titulo"> ¿Qué es un Muk-Bang?
+                        <p>
+                        Es una transmisión en vivo (o grabación) que se originó en Corea 
+                        del Sur, donde las personas comen grandes cantidades de comida mientras
+                         interactúan con su audiencia en caso de que estén en vivo. 
+                        </p>
+                    </th>
+                    <td colspan="2">
+                        <img src="/mukbang.webp" alt="Imagen relacionada a lo que es un Muk-Bang" id="muk-bang">
+                    </td>
+                    <td><strong>Audiencia</strong>
+                        <ul>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <li><b>Espectadores y Motivaciones: </b> Las personas ven mukbang por entretenimiento, 
+                                para sentir compañía mientras comen solas, para disfrutar los sonidos ASMR 
+                                o para descubrir comidas nuevas.
+                            </li>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+                            <li><b>Demografía: </b> Los espectadores son de todas las edades 
+                                y de todas partes del mundo.
+                            </li>
 
-    <title>Página HTML Esencial</title>
+                            <li><b>Interacción: </b> La audiencia interactúa con el creador de contenido 
+                                a través de comentarios, "me gusta" y chats en vivo, lo que hace que la experiencia
+                                sea mucho más atractiva y participativa (y rara xd).
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>    
+                    <th scope="row" colspan="2">Impacto y efectos
+                        <ul>
+                            <li><b>Salud y Nutrición: </b>Habla sobre la controversia que rodea al mukbang y cómo promueve
+                                hábitos de alimentación poco saludables. 
+                                Se pueden mencionar las críticas sobre la glotonería y el desperdicio de comida.
+                            </li>
+                            
+                            <li><b>Compañía y Soledad: </b>Explica cómo el fenómeno surgió en Corea para ofrecer una forma
+                                de compañía virtual, especialmente para aquellos que comen solos, y cómo ha evolucionado 
+                                a una forma de entretenimiento global.
+                            </li>
+                        </ul>
+                    </th>
+                    <td colspan="2"><b>Tipos </b>
+                         <ul>
 
-</head>
-<body>
+                            <li>
+                                <b>ASMR: </b> Algunos mukbangs se centran en los sonidos al masticar, tragar o crujir DEMASIADO,
+                                lo cual puede ser muy relajante para algunos de los espectadores.
+                            </li>
 
-    <h1>Mi Web</h1>
-    
-    <p>
-        Vamos a hacer esta cosa, basicamente vamos a ver para que sirven las etiquetas princpiales en html.
-    </p>
+                            <li>
+                                <b>Desafíos y Comidas Temáticas: </b> ay creadores que se especializan en comer alimentos 
+                                que son extremadamente picantes, grandes cantidades de comida (cualquiera, LITERALMENTE), o solo 
+                                un tipo específico de platillo tales como, mariscos, postres o comida de un país en particular.
+                            </li>
 
-    <p>
-        Empezando por la etiqueta <code>&lt;!DOCTYPE html></code> que define el tipo de documento y la versión de HTML.
-    </p>
-
-    <p>
-        Esta tambien la etiqueta de <code>&lt;html></code> que basicamente es el contenedor de toda nuestra página web.
-    </p>
-
-    <p>
-        Finalmente estan las etiquetas de cabecera, definidas como <code>&lt;head></code>, que contiene elementos como el titulo de nuestra página.
-    </p>
-
-    <h2>Encabezados</h2>
-
-    <p>
-        Los encabezados en HTML van desde <code>&lt;h1&gt;</code> (más importante) hasta <code>&lt;h6&gt;</code> (menos importante).
-    </p>
-
-    <h3>Ejemplo de encabezados:</h3>
-
-    <h1>&lt;h1&gt; Encabezado 1 &lt;/h1&gt;</h1>
-    <h2>&lt;h2&gt; Encabezado 2 &lt;/h2&gt;</h2>
-    <h3>&lt;h3&gt; Encabezado 3 &lt;/h3&gt;</h3>
-    <h4>&lt;h4&gt; Encabezado 4 &lt;/h4&gt;</h4>
-    <h5>&lt;h5&gt; Encabezado 5 &lt;/h5&gt;</h5>
-    <h6>&lt;h6&gt; Encabezado 6 &lt;/h6&gt;</h6>
- 
-    <h2>Listas</h2>
-
-    <p>Para agrupar elementos similares, existen dos tipos de listas, las ordenadas y las desordenadas:</p>
-    
-    <ul>
-    
-        <li><code>&lt;ul&gt;</code>: Lista desordenada (viñetas)</li>
-        <li><code>&lt;ol&gt;</code>: Lista ordenada (enumerada)</li>
-    
-    </ul>
-
-    <h3>Ejemplo de lista desordenada</h3>
-    
-    <ul>
-    
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    
-    </ul>
-    
-    <h3>Ejemplo de lista ordenada</h3>
-    
-    <ol>
-    
-        <li>Investigar etiquetas 😈</li>
-        <li>Escribir el código 🧠🧠🧠</li>
-        <li>Probar la página :D</li>
-    
-    </ol>
-
-    <h2>Imágenes</h2>
-    <p>Para mostrar imágenes usa la etiqueta <code>&lt;img&gt;</code> y sus atributos <b>src</b> (ruta de la imagen) y <b>alt</b> (descripción) en caso de que la imagen fallé al cargarse:</p>
-    <img src="https://preview.redd.it/84vh9jr2enu91.jpg?auto=webp&s=b1522398ef3c40fa9c8c6a8352c5c8fa1c997f24" alt="Chicharrón">
-
-    
-    <h2>Enlaces</h2>
-    <p>Para vincular a otras páginas usa la etiqueta <code>&lt;a&gt;</code> con el atributo <b>href</b>:</p>
-    <a href="https://www.utez.edu.mx:8443/SISAVA/" target="_blank">Ingresa al SISA :D</a>
-
-    
-    <h2>Atributos Principales</h2>
-    
-    <ul>
-
-        <li><b>src</b>: Fuente /(ruta de una imagen o web). Ejemplo: <code>&lt;img src="foto.jpg"&gt;</code> <code>&lt;img src="https://mi.imagen.com"&gt;</code></li>
-        <li><b>alt</b>: Texto alternativo de una imagen. Ejemplo: <code>&lt;img alt="Descripción"&gt;</code></li>
-        <li><b>href</b>: Destino de un enlace. Ejemplo: <code>&lt;a href="https://www.utez.edu.mx:8443/SISAVA/"&gt;</code></li>
-        <li><b>title</b>: Título emergente al pasar el mouse. Ejemplo: <code>&lt;a title="Más info"&gt;Enlace&lt;/a&gt;</code></li>
-        <li><b>class</b> y <b>id</b>: Para identificar o aplicar estilos CSS.</li>
-        <li><b>style</b>: Permite aplicar estilos CSS directamente a un elemento.</li>
-
-    </ul>
- 
-</body>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row" colspan="4">Futuro
+                        <p>
+                            El futuro del mukbang se aleja del consumo excesivo. 
+                        </p>
+                        <p>
+                            Se enfocará en la calidad del contenido, con más diversidad de temas, 
+                            como comida vegana o de diferentes culturas, y buscará un balance entre entretenimiento, salud y responsabilidad
+                            hacia los que consumen ese contenido.
+                        </p>
+                    </th>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope = "row"></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
 </html>

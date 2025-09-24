@@ -1,64 +1,39 @@
-h1 {
-    font-family: 'Quicksand', sans-serif;
+table, th, td {
+  border: 2px solid #292828;
+  border-collapse: collapse;
 }
 
-h2 {
-    font-family: 'Quicksand', sans-serif;
-    color: #2c3e50;
+th, td {
+  width: 25%;
+  background-color: #96D4D4;
 }
 
-h3 {
-    font-family: 'Quicksand', sans-serif;
-    color: #34495e;
+table {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  height: 700px;
+  width: 100%;
 }
 
-h4 {
-    font-family: 'Quicksand', sans-serif;
-    color: #7f8c8d;
+th {
+  height: 25px;
+  font-weight: bold;
+  padding: 8px;
 }
 
-h5 {
-    font-family: 'Quicksand', sans-serif;
-    color: #95a5a6;
+p, li{
+  font-weight: normal;
 }
 
-h6 {
-    font-family: 'Quicksand', sans-serif;
-    color: #404649;
+li{
+  padding-top: 5px;
+  padding-right: 30px;
 }
 
-p {
-    font-family: 'Quicksand', sans-serif;
-    line-height: 1.6;
-    color: #333;
+#muk-bang {
+  width: 90%;
+  height: 50%;
 }
 
-li {
-    font-family: 'Quicksand', sans-serif;
-    margin-bottom: 5px;
-    
-}
 
-a {
-    font-family: 'Quicksand', sans-serif;
-    color: #2980b9;
-    text-decoration: none;
-}
 
-a:hover {
-    color: #326f97;
-    text-decoration: underline;
-}
-
-code {
-    font-family: 'Quicksand', sans-serif;
-    background-color: #f4f4f4;
-    padding: 2px 4px;
-    border-radius: 4px;
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
